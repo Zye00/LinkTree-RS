@@ -33,6 +33,7 @@ body {
   background: color image repeat position/size */
 
   background: var(--bg-url) no-repeat top center/cover;
+  height: 100vh;
 }
 
 body * {
@@ -42,7 +43,8 @@ body * {
 }
 
 #container {
-  width: 360px;
+  width: 100%;
+  max-width: 588px;
   /*margin-right: auto;
   margin-left: auto;*/
   margin: 56px auto 0px;
@@ -80,14 +82,18 @@ body * {
   /* Isso mexe nas layers*/
   position: absolute;
   top: 50%;
-  left: 0;
+  animation: slide-out 0.4s;
   z-index: 1;
   transform: translateY(-50%);
 }
 
 .light #switch button {
-  right: 0;
-  left: initial;
+  animation: slide-in 0.4s forwards;
+  /* com o forwards ele vai fzr a animação e vai se manter onde terminou*/
+}
+
+#switch button:hover {
+  outline: 8px solid var(--high-color);
 }
 
 #switch span {
@@ -165,4 +171,38 @@ footer {
   padding: 24px 0px;
   text-align: center;
   font-size: 14px;
+}
+
+/* media */
+@media (min-width: 700px) {
+  :root {
+    --bg-url: url(./assets/assets/bg-desktop.jpg);
+  }
+
+  .light {
+    --bg-url: url(./assets/assets/bg-desktop-light.jpg);
+  }
+}
+
+/*isso só funciona por ter o meta viewport no index
+*/
+
+
+/*animação*/
+@keyframes slide-in {
+  from {
+    left: 0;
+  }
+  to {
+    left: 50%;
+  }
+}
+
+@keyframes slide-out {
+  from {
+    left: 50%
+  }
+  to {
+    left: 0;
+  }
 }
