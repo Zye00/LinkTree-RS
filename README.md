@@ -19,7 +19,7 @@ Programa exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnolog
 <br>
 
 <p align="center">
-  <img alt="projeto DevLinks" src="C:\Users\estev\Downloads\Projeto\.vscode\assets\assets" width="100%">
+  <img alt="projeto DevLinks" src="https://media.discordapp.net/attachments/915735043517865984/1191500101491888178/preview.jpg?ex=65a5a9f1&is=659334f1&hm=3555a85883b63d5702cf665204239599e628fdbb8b9862d46c91f0cc9ed9c353&=&format=webp&width=618&height=434" width="100%">
 </p>
 
 ## 🚀 Tecnologias
